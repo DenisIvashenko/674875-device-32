@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Deniska Ivashenko](https://up.htmlacademy.ru/htmlcss/32/user/674875).
-* Наставник: `Неизвестно`.
+* Наставник: [Елена Асташина](https://htmlacademy.ru/profile/helen_astashina).
 
 ---
 
