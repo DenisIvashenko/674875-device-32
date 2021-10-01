@@ -7,36 +7,34 @@
     <body>
         <header class="page-header">
             <a><img class="header-logo" src="" alt="Логотип магазина Девайс"></a>
-            <a class="search" href="#">Поиск по сайту</a>
+            <button class="search" type="submit" href="#">Поиск по сайту</button>
                 <form class="search-form" method="POST" action="https://echo.htmlacademy.ru/">
                     <input type="text" name="search"  placeholder="Поиск по сайту">
                 </form>
             <a class="catalog" href="#">Каталог товаров</a>
             <a class="catalog">+</a>
-            <nav class="navigation">
-                <ul class="navigation-list">   
-                    <li class="navigation-item">
-                        <a class="navigation-link" href="#">Войти</a>
-                    </li>
-                    <li class="navigation-item">
-                        <a class="navigation-link" href="#">Сравнить</a>
-                    </li>
-                    <li class="navigation-item">
-                        <a class="navigation-link" href="#">Корзина</a>
-                    </li>
-                </ul>
-                <ul class="navigation-list">
-                    <li class="navigation-item">
-                        <a class="navigation-link" href="#">Доставка</a>
-                    </li>
-                    <li class="navigation-item">
-                        <a class="navigation-link" href="#">Горантия</a>
-                    </li>
-                    <li class="navigation-item">
-                        <a class="navigation-link" href="#">Контакты</a>
-                    </li>
-                </ul>
-            </nav>
+            <ul class="navigation-list">   
+                <li class="navigation-item">
+                    <a class="navigation-link" href="#">Войти</a>
+                </li>
+                <li class="navigation-item">
+                    <a class="navigation-link" href="#">Сравнить</a>
+                </li>
+                <li class="navigation-item">
+                    <a class="navigation-link" href="#">Корзина</a>
+                </li>
+            </ul>
+            <ul class="navigation-list">
+                 <li class="navigation-item">
+                    <a class="navigation-link" href="#">Доставка</a>
+                </li>
+                <li class="navigation-item">
+                    <a class="navigation-link" href="#">Горантия</a>
+                </li>
+                <li class="navigation-item">
+                    <a class="navigation-link" href="#">Контакты</a>
+                </li>
+            </ul>
         </header>
         <main class="main-index">
             <h1 class="visually-hidden">Магзин device</h1>
@@ -50,9 +48,6 @@
                             <a href="#">Подробнее</a>
                             <p>800 м <span>Дальность полета</span> </p>
                             <p>50 м <span>Радиус поражения</span></p>
-                            
-                        <button class="image-prev"></button>
-                        <button class="image-next"></button>
                     </li>
                     <li class="slider-item">
                         <img class="slider-image" src="#" alt="картинка Фитнес-браслета">
@@ -60,10 +55,6 @@
                             <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
                             <a href="#">Подробнее</a>
                             <p>48 часов <span>Без подзарядки</span></p>
-                            
-                            
-                        <button class="image-prev"></button>
-                        <button class="image-next"></button>
                     </li>
                     <li class="slider-item">
                         <img class="slider-image" src="#" alt="картинка селфи-палки">
@@ -73,11 +64,10 @@
                             <p>8,5 м <span>Длина палки</span> </p>
                             <p>5 кг <span>Вес палки</span></p>
                             <p>Карбон <span>Материал</span></p>
-                            
-                        <button class="image-prev"></button>
-                        <button class="image-next"></button>
                     </li>
                 </ul>
+                <button class="image-prev"><</button>
+                <button class="image-next">></button>
                 <ol class="slider-image">
                     <li class="slider-image-item">
                         <button class="slider-image-button slider-image-button-current" type="button">
@@ -124,17 +114,22 @@
                         <ul class="advantages-list">
                             <li class="advantages-items">
                                 <a class="advantages-link" href="#">Доставка</a>
-                            </li><li class="advantages-items">
+                            </li>
+                            <li class="advantages-items">
                                 <a class="advantages-link" href="#">Гарантия</a>
-                            </li><li class="advantages-items">
+                            </li>
+                            <li class="advantages-items">
                                 <a class="advantages-link" href="#">Кредит</a>
                             </li>
                         </ul>
                         <div>
                             <h3>Доставка</h3>
                             <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+                        <div>
                             <h3>Гарантия</h3>
                             <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
+                        </div>
+                        <div>    
                             <h3>Кредит</h3>
                             <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для банка, разумеется.</p>
                         </div>
@@ -186,7 +181,7 @@
                 </section>
             </main>
             <footer class="page-footer">
-                <img class="footer-contacts-logo" src="" alt="Логотип магазина Девайс">
+                <a><img class="footer-contacts-logo" src="" alt="Логотип магазина Девайс"></a>
                 <address class="contacts-address">Санкт-Петербург, набережная реки Карповки, 5, литера П.</address>
                 <ul>
                     <li class="navigation-items">
@@ -218,7 +213,6 @@
                   </ul>
                 <p><a class="contacts-phone" href="tel:78128121212">+7(812)812-12-12</a></p>
                 <p><a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a></p>
-               
             </footer>
         </body>
     </html>
