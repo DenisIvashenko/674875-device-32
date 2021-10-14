@@ -26,8 +26,15 @@
     src: url("fonts/rubik-bold.woff2") format("woff2");
     font-display: swap;
 }
+html {
+    height: 100%;
+}
 
 body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
     font-family: "rubik", sans-serif;
     font-size: 16px;
     line-height: 19px;
@@ -37,6 +44,8 @@ body {
 .page-header {
     color: #000000;
     background-color: #FFE17F; 
+    width: 1160px;
+    margin: 0 auto;
 }
 .search {
     font-family: "rubik", sans-serif;
@@ -46,6 +55,17 @@ body {
     background-color: #FFE17F;
     opacity: 0.3;
 }
+.page-heder-top {
+    display: flex;
+    width: 1075px;
+    margin: 0 auto;
+    justify-content: space-around;
+}
+.custom-menu-list {
+    display: flex;
+    justify-content: space-around;
+    width: 420px;
+}
 .custom-menu-link {
     font-family:"rubik", sans-serif;
     font-weight: 400;
@@ -53,6 +73,12 @@ body {
     color: #000000;
     background-color: #FFE17F;
     text-decoration: none;
+}
+.navigation-list {
+    display: flex;
+    justify-content: space-around;
+    width: 1041px;
+    margin: 0 auto;
 }
 .navigation-link {
     font-family: "raleway", sans-serif;
@@ -65,6 +91,23 @@ body {
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 0.2em;
+}
+.main-container {
+    flex-grow: 1;
+}
+.page-container {
+    width: 1160px;
+    margin: 0 auto;
+}
+.slider-item {
+    display: none;
+}
+.slider-item.active {
+    display: flex;
+    justify-content: space-between; 
+}
+.slider-image {
+    width: 560px;
 }
 .slider-title {
     font-family: "releway" sans-serif;
@@ -89,6 +132,10 @@ body {
     text-decoration: none;
     color: #000000;
 }
+.slider-title.slider-description.slider-info div {
+    display: flex;
+    flex-direction: column;
+}
 .slider-characteristics {
     font-size: 36px;
     line-height: 30px;
@@ -107,6 +154,26 @@ body {
     color: #000000;
     letter-spacing: -0.02em;
 }
+.categories-list {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    width: 1160px;
+}
+.advantages {
+    display: flex;
+    justify-content: space-around;
+}
+.advantages-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.advantages-content {
+    display: flex;
+    flex-direction: column;
+}
 .advantages-link {
     font-family: "raleway", sans-serif;
     font-weight: 800;
@@ -116,6 +183,7 @@ body {
     color: #000000;
     letter-spacing: 0.2em;
     text-transform: uppercase;
+
 }
 .advantages-title {
     font-family: "raleway", sans-serif;
@@ -139,6 +207,11 @@ body {
     letter-spacing: 0.2em;
     text-transform: uppercase;
     background-color: #F0F0F0;
+    width: 1160px;
+}
+.info-block {
+    display: flex;
+    justify-content: space-around;
 }
 .about-title {
     font-family: "ralewayl", sans-serif;
@@ -232,13 +305,17 @@ body {
     color: #000000;
 }
 .newsletter {
+    display: flex;
+    flex-wrap: wrap;
     background-color: #F0F0F0;
+    width: 1440px;
 }
 .newsletter-title {
     font-family: "raleway", sans-serif;
     font-weight: 800;
     font-size: 50px;
     line-height: 50px;
+    width: 560px;
 }
 .newsletter-email {
     font-family: "rubik", sans-serif;
@@ -246,6 +323,7 @@ body {
     font-size: 18px;
     line-height: 30px;
     color: #444444;
+    width: 560px;
 }
 .field {
     font-family: "rubik", sans-serif;
@@ -254,6 +332,7 @@ body {
     line-height: 30px;
     color: #444444;
     opacity: 0.5;
+    width: 560px;
 }
 .button newsletter-button {
     font-family: "raleway", sans-serif;
@@ -263,9 +342,15 @@ body {
     text-align: center;
     letter-spacing: 0.2em;
     text-transform: uppercase;
+    width: 260px;
 }
 .page-footer {
     background-color: #444444;
+}
+.page-footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1440px;
 }
 .footer-contacts-address {
     font-family: "rubik", sans-serif;
@@ -274,6 +359,16 @@ body {
     font-size: 16px;
     line-height: 19px;
     color: #ffffff;
+}
+.footer-navigation-list {
+    display: flex;
+    justify-content: space-between;
+    width: 444px;
+}
+.footer-social-list {
+    display: flex;
+    justify-content: space-between;
+    width: 120px;
 }
 .footer-navigation-link {
     font-family: "raleway", sans-serif;
@@ -312,6 +407,17 @@ body {
     opacity: 0.6;
     text-decoration: none;
     color: #000000;
+}
+.catalog-products {
+    display: flex;
+}
+.catalog-left-column {
+    width: 200px;
+    margin-left: 200px;
+    margin-right: 68px;
+}
+.catalog-right-column {
+    width: 972px;
 }
 .filter {
     font-family: "raleway", sans-serif;

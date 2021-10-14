@@ -7,15 +7,16 @@
     </head>
     <body>
         <header class="page-header">
-            <a><img class="header-logo" href="index.html" src="img/vector/logotip.svg" alt="Логотип магазина Девайс"></a>
-            <button class="search" type="submit" href="#">Поиск по сайту</button>
+            <a><img class="header-logo" src="img/vector/logotip.svg" width="145" height="36" alt="Логотип магазина Девайс"></a>
+            <div class="page-heder-top" >
                 <form class="search-form" method="POST" action="https://echo.htmlacademy.ru/">
                     <label class="search-label">
                         <input type="text" name="search"  placeholder="Поиск по сайту">
                         <span class="visually-hidden">Поиск по сайту</span>
                     </label>
                 </form>
-                <ul class="custom-menu-list">   
+                <button class="search" type="submit" href="#">Найти</button>
+                <ul class="custom-menu-list">
                     <li class="custom-menu-item">
                         <a class="custom-menu-link" href="#">Войти</a>
                     </li>
@@ -26,27 +27,28 @@
                         <a class="custom-menu-link" href="#">Корзина</a>
                     </li>
                 </ul>
-                <nav class="navigation">
-                    <ul class="navigation-list">
-                        <li class="navigation-item">
-                            <a class="navigation-link" href="#">Каталог товаров</a>
-                        </li>
-                        <li class="navigation-item">
-                            <a class="navigation-link">+</a>
-                        </li>
-                        <li class="navigation-item">
-                            <a class="navigation-link" href="#">Доставка</a>
-                        </li>
-                        <li class="navigation-item">
-                            <a class="navigation-link" href="#">Гарантия</a>
-                        </li>
-                        <li class="navigation-item">
-                            <a class="navigation-link" href="#">Контакты</a>
-                        </li>
-                    </ul>
-                </nav>
+            </div>
+            <nav class="navigation">
+                <ul class="navigation-list">
+                    <li class="navigation-item">
+                        <a class="navigation-link" href="#">Каталог товаров</a>
+                    </li>
+                    <li class="navigation-item">
+                        <a class="navigation-link">+</a>
+                    </li>
+                    <li class="navigation-item">
+                        <a class="navigation-link" href="#">Доставка</a>
+                    </li>
+                    <li class="navigation-item">
+                        <a class="navigation-link" href="#">Гарантия</a>
+                    </li>
+                    <li class="navigation-item">
+                        <a class="navigation-link" href="#">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
         </header>
-        <main class="main-inner">
+        <main class="main-container main-inner">
             <h1 class="page-main">Моноподы для селфи</h1>
             <ul>
                 <li class="breadcrumbs-item">
@@ -59,8 +61,10 @@
                     <a class="breadcrumbs-link">Моноподы для селфи</a>
                 </li>
             </ul>
+        <div class="catalog-products">
             <section class="catalog-products">
                 <h2 class="visualy-hidden">Список товаров с фильтрами</h2>
+                <div class="catalog-left-column">
                 <p class="filter">фильтр:</p>
                 <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="GET">
                     <fieldset class="catalog-filter-group">
@@ -139,6 +143,8 @@
                     </fieldset>
                     <button class="button-catalog-filter" type="submit">показать</button>
                 </form>
+                </div>
+                <div class="catalog-right-column">
                 <p class="sorting-type">Сортировка</p>
                 <form class="sorting-type">
                     <label class="visually-hidden" for="sorting">Сортировка</label>
@@ -219,6 +225,8 @@
                       </a>
                     </li>
                 </ul>
+                </div>  
+        </div>        
         </main>
         <footer class="page-footer">
             <a><img class="footer-contacts-logo" href="index.html" src="img/vector/logotip-2.svg" alt="Логотип магазина Девайс"></a>
