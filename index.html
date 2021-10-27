@@ -6,16 +6,18 @@
         <link rel="stylesheet" href="styles/styles.css">
     </head>
     <body>
+        <div class="container">
         <header class="page-header">
-            <a><img class="header-logo" src="img/vector/logotip.svg" width="145" height="36" alt="Логотип магазина Девайс"></a>
+            <a class="header-logo"><img src="img/vector/logotip.svg" width="145" height="36" alt="Логотип магазина Девайс"></a>
             <div class="page-heder-top" >
                 <form class="search-form" method="POST" action="https://echo.htmlacademy.ru/">
                     <label class="search-label">
                         <input type="text" name="search"  placeholder="Поиск по сайту">
                         <span class="visually-hidden">Поиск по сайту</span>
                     </label>
+                    <button class="search" type="submit" href="#">Найти</button>
                 </form>
-                <button class="search" type="submit" href="#">Найти</button>
+                
                 <ul class="custom-menu-list">
                     <li class="custom-menu-item">
                         <a class="custom-menu-link" href="#">Войти</a>
@@ -32,9 +34,7 @@
                 <ul class="navigation-list">
                     <li class="navigation-item">
                         <a class="navigation-link" href="#">Каталог товаров</a>
-                    </li>
-                    <li class="navigation-item">
-                        <a class="navigation-link">+</a>
+                        <button class="navigation-link" type="button">+</button>
                     </li>
                     <li class="navigation-item">
                         <a class="navigation-link" href="#">Доставка</a>
@@ -56,12 +56,14 @@
                     <ul class="slider-list">
                         <li class="slider-item active">
                             <img class="slider-image" src="img/slider-1.png" width="560" height="560" alt="квадрокоптера">
-                            <div class="slider-title slider-description slider-info">
+                            <div class="slider-text-wrap">
                                 <h3 class="slider-title">Порхает как бабочка, жалит как пчела!</h3>
                                 <p class="slider-description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
                                 <a class="slider-info" href="#">Подробнее</a>
+                            <div class="slider-characteristics-wrap">
                                 <p class="slider-characteristics">800 м <span>Дальность полета</span> </p>
                                 <p class="slider-characteristics">50 м <span>Радиус поражения</span></p>
+                            </div>
                             </div>    
                         </li>
                         <li class="slider-item">
@@ -87,7 +89,7 @@
                     </ul>
                     <button class="image-prev"><</button>
                     <button class="image-next">></button>
-                    <ol class="slider-image">
+                    <ol class="slider-navigetion">
                         <li class="slider-image-item">
                             <button class="slider-image-button slider-image-button-current" type="button">
                                 <span class="visually-hidden">1 девайс</span>
@@ -132,24 +134,24 @@
                     <h2 class="visually-hidden">Преимущества</h2>
                         <ul class="advantages-list">
                             <li class="advantages-items">
-                                <a class="advantages-link" href="#">Доставка</a>
+                                <button class="advantages-link" type="button">Доставка</button>
                             </li>
                             <li class="advantages-items">
-                                <a class="advantages-link" href="#">Гарантия</a>
+                                <button class="advantages-link" type="button">Гарантия</button>
                             </li>
                             <li class="advantages-items">
-                                <a class="advantages-link" href="#">Кредит</a>
+                                <button class="advantages-link" type="button">Кредит</button>
                             </li>
                         </ul>
-                        <div class="adventages-content">
+                        <div class="advantages-content active">
                             <h3 class="advantages-title">Доставка</h3>
                             <p class="advantages-text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
                         </div>
-                        <div class="adventages-content">
+                        <div class="advantages-content">
                             <h3 class="advantages-title">Гарантия</h3>
                             <p class="advantages-text">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
                         </div>
-                        <div class="adventages-content">    
+                        <div class="advantages-content">    
                             <h3 class="advantages-title">Кредит</h3>
                             <p class="advantages-text">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для банка, разумеется.</p>
                         </div>
@@ -185,7 +187,9 @@
                             <a class="contacts-link" href="#">Напишите нам</a>        
                     </section>
                 </div>
+            </div>
                 <section class="newsletter">
+                    <div class="newsletter-container">
                     <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
                         <p class="newsletter-email">Еженедельный дайджест с обзорами новинок,
                             длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
@@ -199,13 +203,14 @@
                                 </button>
                             </form>
                             <p class="newsletter-email">Это бесплатно</p>
+                    </div>
                 </section>
-            </div>
             </main>
             <footer class="page-footer">
                 <div class="page-footer-container">
                     <a><img class="footer-contacts-logo" src="img/vector/logotip-2.svg" width="144,9" height="36" alt="Логотип магазина Девайс"></a>
                     <address class="footer-contacts-address">Санкт-Петербург, набережная реки Карповки, 5, литера П.</address>
+                    <div class="footer-navigation-list footer-social-list">
                     <ul class="footer-navigation-list">
                         <li class="footer-navigation-items">
                             <a class="footer-navigation-link" href="#">Доставка</a>
@@ -234,10 +239,12 @@
                             </a>
                         </li>
                     </ul>
+                    </div>
                         <p><a class="footer-contacts-phone" href="tel:78128121212">+7(812)812-12-12</a></p>
                         <p><a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a></p>
                 </div>
             </footer>
+        </div>
         </body>
     </html>
     

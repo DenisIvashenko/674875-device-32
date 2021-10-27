@@ -6,6 +6,7 @@
         <link rel="stylesheet" href="styles/styles.css">
     </head>
     <body>
+        <div class="page-catalog-container">
         <header class="page-header">
             <a><img class="header-logo" src="img/vector/logotip.svg" width="145" height="36" alt="Логотип магазина Девайс"></a>
             <div class="page-heder-top" >
@@ -50,7 +51,7 @@
         </header>
         <main class="main-container main-inner">
             <h1 class="page-main">Моноподы для селфи</h1>
-            <ul>
+            <ul class="breadcrumbs-list">
                 <li class="breadcrumbs-item">
                     <a class="breadcrumbs-link" href="index.html">Главная</a>
                 </li>
@@ -63,7 +64,7 @@
             </ul>
         <div class="catalog-products">
             <section class="catalog-products">
-                <h2 class="visualy-hidden">Список товаров с фильтрами</h2>
+                <h2 class="visually-hidden">Список товаров с фильтрами</h2>
                 <div class="catalog-left-column">
                 <p class="filter">фильтр:</p>
                 <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="GET">
@@ -145,6 +146,7 @@
                 </form>
                 </div>
                 <div class="catalog-right-column">
+                    <div class="catalog-right-column-sorting">
                 <p class="sorting-type">Сортировка</p>
                 <form class="sorting-type">
                     <label class="visually-hidden" for="sorting">Сортировка</label>
@@ -161,9 +163,11 @@
                 <a href="#" class="button">
                     <span class="visually-hidden">По убыванию</span>
                 </a>
-            </section>
+                </div>
+
+            
                 <ul class="products-list">
-                    <li class="products-list">
+                    <li class="products-item">
                         <a class="product-card-link" href="product.html">
                         <img class="product-card-image" src="img/product-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
                         <h3 class="product-card-title">Любительская селфи-палка</h3>
@@ -171,7 +175,7 @@
                         <p class="product-card-price">500₽</p>
                         <p class="produkt-card-info">Подробнее</p>
                     </li>
-                    <li class="products-list">
+                    <li class="products-item">
                         <a class="product-card-link" href="product.html">
                         <img class="product-card-image" src="img/product-2.jpg" width="360" height="380" alt="Профессиональская селфи-палка">
                         <h3 class="product-card-title">Профессиональская селфи-палка</h3>
@@ -179,7 +183,7 @@
                         <p class="product-card-price">1500₽</p>
                         <p class="produkt-card-info">Подробнее</p>
                     </li>
-                    <li class="products-list">
+                    <li class="products-item">
                         <a class="product-card-link" href="product.html">
                         <img class="product-card-image" src="img/product-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
                         <h3 class="product-card-title">Непотопляемая селфи-палка</h3>
@@ -187,7 +191,7 @@
                         <p class="product-card-price">2500₽</p>
                         <p class="produkt-card-info">Подробнее</p>
                     </li>
-                    <li class="products-list">
+                    <li class="products-item">
                         <a class="product-card-link" href="product.html">
                         <img class="product-card-image" src="img/product-4.jpg" width="360" height="380" alt="Селфи-палка Следуй за мной">
                         <h3 class="product-card-title">Селфи-палка "Следуй за мной"</h3>
@@ -225,42 +229,48 @@
                       </a>
                     </li>
                 </ul>
-                </div>  
+                </div>
+                </section>  
+        </div>
         </div>        
         </main>
         <footer class="page-footer">
-            <a><img class="footer-contacts-logo" href="index.html" src="img/vector/logotip-2.svg" alt="Логотип магазина Девайс"></a>
-            <address class="footer-contacts-address">Санкт-Петербург, набережная реки Карповки, 5, литера П.</address>
-            <ul>
-                <li class="footer-navigation-items">
-                   <a class="footer-navigation-link" href="#">Доставка</a>
-                </li>
-                <li class="footer-navigation-items">
-                   <a class="footer-navigation-link" href="#">Гарантия</a>
-                </li>
-                <li class="footer-navigation-items">
-                    <a class="footer-navigation-link" href="#">Контакты</a>
-                </li>    
-            </ul>
-            <ul class="footer-social-list">
-                <li class="footer-social-item">
-                  <a class="button" href="https://www.facebook.com/htmlacademy">
-                    <span class="visually-hidden">Фейсбук</span>
-                  </a>
-                </li>
-                <li class="footer-social-item">
-                  <a class="button" href="https://www.instagram.com/htmlacademy">
-                    <span class="visually-hidden">Инстаграм</span>
-                  </a>
-                </li>
-                <li class="footer-social-item">
-                  <a class="button" href="https://twitter.com/htmlacademy_ru">
-                    <span class="visually-hidden">Твитер</span>
-                  </a>
-                </li>
-              </ul>
-            <p><a class="footer-contacts-phone" href="tel:78128121212">+7(812)812-12-12</a></p>
-            <p><a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a></p>
+            <div class="page-footer-container">
+                <a><img class="footer-contacts-logo" src="img/vector/logotip-2.svg" width="144,9" height="36" alt="Логотип магазина Девайс"></a>
+                <address class="footer-contacts-address">Санкт-Петербург, набережная реки Карповки, 5, литера П.</address>
+                <div class="footer-navigation-list footer-social-list">
+                <ul class="footer-navigation-list">
+                    <li class="footer-navigation-items">
+                        <a class="footer-navigation-link" href="#">Доставка</a>
+                    </li>
+                    <li class="footer-navigation-items">
+                        <a class="footer-navigation-link" href="#">Гарантия</a>
+                    </li>
+                    <li class="footer-navigation-items">
+                        <a class="footer-navigation-link" href="#">Контакты</a>
+                    </li>    
+                </ul>
+                <ul class="footer-social-list">
+                    <li class="footer-social-item">
+                        <a class="button" href="https://www.facebook.com/htmlacademy">
+                        <span class="visually-hidden">Фейсбук</span>
+                        </a>
+                    </li>
+                    <li class="footer-social-item">
+                        <a class="button" href="https://www.instagram.com/htmlacademy">
+                            <span class="visually-hidden">Инстаграм</span>
+                        </a>
+                    </li>
+                    <li class="footer-social-item">
+                        <a class="button" href="https://twitter.com/htmlacademy_ru">
+                            <span class="visually-hidden">Твитер</span>
+                        </a>
+                    </li>
+                </ul>
+                </div>
+                    <p><a class="footer-contacts-phone" href="tel:78128121212">+7(812)812-12-12</a></p>
+                    <p><a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a></p>
+            </div>
         </footer>
     </body>
 </html>
