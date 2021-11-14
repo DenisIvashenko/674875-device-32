@@ -59,7 +59,10 @@ body {
     background-color: #FFE17F; 
     width: 1160px;
     margin: 40px auto 0;
-    padding: 49px 25px 167px 60px;  
+    padding: 49px 60px 167px;  
+}
+.header-catalog {
+    padding: 49px 60px 53px;
 }
 .header-logo {
     display: block;
@@ -76,23 +79,19 @@ body {
 .page-heder-top {
     display: flex;
     justify-content: space-between;
-    width: 1075px;
-    margin: 0 auto;
     padding-top: 49px;  
 }
 .custom-menu-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    min-width: 420px;
     margin-left: auto;
     padding: 0;
     list-style-type: none;
 }
 .custom-menu-link {
     display: block;
-    min-width: 100px;
-    min-height: 20px;
+    margin-left: 50px;
     font-family:"rubik", sans-serif;
     font-weight: 400;
     text-align: center;
@@ -103,10 +102,9 @@ body {
 .navigation-list {
     display: flex;
     justify-content: flex-end;
-    width: 1041px;
-    margin: 0 auto;
-    padding-top: 44px;
+    padding: 44px 0 0;
     list-style-type: none;
+    margin: 0;
 }
 .navigation-item {
     display: flex;
@@ -139,10 +137,16 @@ body {
     width: 1160px;
     margin: 0 auto;
 }
+.slider-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
 .slider {
     margin-top: -167px;
     position: relative;
     z-index: 1;
+    margin-bottom: 263px;
 }
 .slider-item {
     display: none;
@@ -211,27 +215,26 @@ body {
     letter-spacing: -0.02em;
 }
 .categories-list {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 70px;
-    padding: 0;
-    width: 1160px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 40px;
     list-style: none;
-    min-height: 200px;
+    margin-bottom: 139px;
 }
 .advantages {
     display: flex;
-    margin-top: 149px;
+    background-color: #F0F0F0;
+    margin-bottom: 90px;
 }
 .advantages-list {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     list-style: none;
+    margin-right: 120px;
 }
 .advantages-content {
     display: none;
-    margin-left: 116px;
 }
 .advantages-content.active {
     display: block;
@@ -271,17 +274,20 @@ body {
     text-transform: uppercase;
     background-color: #F0F0F0;
     width: 1160px;
-    margin-top: 159px;
 }
 .info-block {
-    display: flex;
-    margin-top: 146px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 40px;
+    padding-top: 146px;
+    margin-bottom: 87px;
 }
 .about-title {
     font-family: "raleway", sans-serif;
     font-weight: 800;
     font-size: 50px;
     line-height: 50px;
+    margin-bottom: 26px;
 }
 .about-text {
     font-family: "rubik", sans-serif;
@@ -289,34 +295,45 @@ body {
     font-size: 18px;
     line-height: 30px;
     color: #444444;
-    margin-top: 26px;
     height: 101px;
+    margin: 0;
+}
+.companies {
+    margin-top: 23px;
+    margin-bottom: 22px;
+    padding: 0;
 }
 .companies-name {
     font-family: "rubik", sans-serif;
     font-weight: 700;
     font-size: 18px;
     line-height: 20px;
-    margin-top: 23px;
+    list-style-type: none;
+    padding-bottom: 30px;
+}
+.companies-name::before {
+    color: #FFC700;
+    content: "●";
+    padding-right: 8px;
 }
 .about-more {
     font-family: "raleway", sans-serif;
     font-weight: 800;
     font-size: 18px;
     line-height: 21px;
-    text-align: center;
+    text-align: left;
     letter-spacing: 0.2em;
     text-transform: uppercase;
     text-decoration: none;
     color: #000000;
     display: block;
-    margin-top: 52px;
 }
 .contacts-title {
     font-family: "raleway", sans-serif;
     font-weight: 800;
     font-size: 50px;
     line-height: 50px;
+    margin-bottom: 26px;
 }
 .contacts-text {
     font-family: "rubik", sans-serif;
@@ -324,7 +341,7 @@ body {
     font-size: 18px;
     line-height: 30px;
     color: #444444;
-    margin-top: 26px;
+    margin-bottom: 30px;
 }
 .contacts-address-title {
     font-family: "rubik", sans-serif;
@@ -332,7 +349,7 @@ body {
     font-size: 24px;
     line-height: 30px;
     color: #444444;
-    margin-top: 30px;
+    margin-bottom: 15px;
 }
 .contacts-address {
     font-family: "rubik", sans-serif;
@@ -341,7 +358,6 @@ body {
     font-size: 18px;
     line-height: 30px;
     color: #444444;
-    margin-top: 15px;
 }
 .contacts-phone {
     font-family: "rubik", sans-serif;
@@ -350,6 +366,7 @@ body {
     line-height: 30px;
     text-decoration-line: underline;
     color: #444444;
+    margin-bottom: 30px;
 }
 .contacts-subtitle {
     font-family: "rubik", sans-serif;
@@ -357,7 +374,11 @@ body {
     font-size: 24px;
     line-height: 30px;
     color: #444444;
-    margin-top: 30px;
+    margin-bottom: 15px;
+}
+.contacts-schedule {
+    margin-bottom: 67px;
+    padding: 0;
 }
 .contacts-scheduke-item {
     font-family: "rubik", sans-serif;
@@ -365,28 +386,27 @@ body {
     font-size: 18px;
     line-height: 30px;
     color: #444444;
-    margin-top: 15px;
+    list-style: none; 
 }
 .contacts-link {
     font-family: "raleway", sans-serif;
     font-weight: 800;
     font-size: 18px;
     line-height: 21px;
-    text-align: center;
+    text-align: left;
     letter-spacing: 0.2em;
     text-transform: uppercase;
     text-decoration: none;
     color: #000000;
     display: block;
-    margin-top: 67px;
 }
 .newsletter {
     background-color: #F0F0F0;
 }
 .newsletter-container {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 87px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 40px;
 }
 .newsletter-title {
     font-family: "raleway", sans-serif;
@@ -395,15 +415,23 @@ body {
     line-height: 50px;
     width: 560px;
     padding-top: 75px;
+    margin: 0;
 }
-.newsletter-email {
+.newsletter-text {
     font-family: "rubik", sans-serif;
     font-weight: 400;
     font-size: 18px;
     line-height: 30px;
     color: #444444;
     width: 560px;
-    margin-top: 53px;
+    margin-top: 86px;
+}
+.newsletter-form {
+    display: flex;
+}
+.newsletter-form-wrap {
+    display: grid;
+    grid-column: 1/-1;
 }
 .field {
     font-family: "rubik", sans-serif;
@@ -477,7 +505,11 @@ body {
 
 }
 .page-catalog-container {
-    max-width: 1440px;
+    min-width: 1440px;
+    margin: 0 auto;
+}
+.page-container-catalog {
+    min-width: 1440px;
     margin: 0 auto;
 }
 .page-main {
@@ -486,14 +518,12 @@ body {
     font-size: 50px;
     line-height: 50px;
     color: #000000;
-    margin-top: 37px;
-    margin-left: 200px;
+    margin: 0 200px 14px;
 }
 .breadcrumbs-list {
     display: flex;
     list-style: none;
-    margin-top: 14px;
-    margin-left: 200px;
+    margin: 0 200px 49px;
 }
 .breadcrumbs-link {
     font-family: "rubik", sans-serif;
@@ -505,11 +535,15 @@ body {
     color: #000000;
 }
 .catalog-products {
-    display: flex;
+    padding-top: 37px;
+    margin: 0;
+}
+.catalog-products-wrap {
+    display: grid;
+    grid-template-columns: 468px 1fr;
 }
 .catalog-left-column {
-    width: 200px;
-    margin-right: 68px;
+    background-color: #E5E5E5;
 }
 .catalog-right-column {
     list-style: none;
@@ -517,6 +551,8 @@ body {
 .catalog-right-column-sorting {
     display: flex;
     align-items: center;
+    padding: 25px 0 25px 72px;
+    background-color: #EBEBEB;
 }
 .filter {
     font-family: "raleway", sans-serif;
@@ -526,10 +562,15 @@ body {
     letter-spacing: 0.2em;
     text-transform: uppercase;
     background-color: #DCDCDC;
-    margin-top: 49px;
+    padding: 25px 0 25px 200px;
+    
+    margin: 0;
 }
 .catalog-filter-group {
     background-color: #E5E5E5;
+    margin-left: 200px;
+    margin-right: 69px;
+    max-width: 200px;
 }
 .catalog-filter-title {
     font-family: "rubik", sans-serif;
@@ -558,6 +599,7 @@ body {
     text-align: center;
     letter-spacing: 0.2em;
     text-transform: uppercase;
+    margin-left: 200px;
 }
 .sorting-type {
     font-family: "raleway", sans-serif;
@@ -566,6 +608,8 @@ body {
     line-height: 19px;
     letter-spacing: 0.2em;
     text-transform: uppercase;
+    background-color: #E5E5E5;
+    margin: 0;
 }
 option {
     font-family: "rubik", sans-serif;
@@ -574,13 +618,14 @@ option {
     line-height: 19px;
 }
 .products-list {
-    display: flex;
-    flex-wrap: wrap;
-    width: 972px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 40px;
+    grid-row-gap: 44px;
     list-style-type: none;
-}
-.products-item {
-    margin-right: 40px;
+    margin-top: 69px;
+    margin-left: 72px;
+    padding: 0;
 }
 .product-card-title, .product-card-link {
     font-family: "rubik", sans-serif;
@@ -607,16 +652,30 @@ option {
     letter-spacing: 0.2em;
     text-transform: uppercase;
 }
-.button, .pagination-show-more {
+.product-card-price-info {
+    display: flex;
+}
+.pagination-show-more {
     font-family: "raleway", sans-serif;
     font-weight: 800;
     font-size: 16px;
     line-height: 19px;
-    display: flex;
-    align-items: center;
     text-align: center;
     letter-spacing: 0.2em;
     text-transform: uppercase;
+    margin: 44px 0 51px 72px;
+    min-width: 760px;
+}
+.pagination-link {
+    font-family: "rubik", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #444444;
+    opacity: 0.3;
+    text-transform: none;
+    text-decoration: none;
 }
 .pagination-prev, .pagination-next {
     font-family: "raleway", sans-serif;
@@ -630,18 +689,19 @@ option {
     text-decoration: none;
     color: #000000;
 }
-.pagination-link {
-    font-family: "rubik", sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-    text-align: center;
-    color: #444444;
-    opacity: 0.3;
-}
 .pagination {
+    width: 760px;
     display: flex;
     justify-content: space-between;
     text-decoration: none;
     list-style-type: none;
+    background-color: #EBEBEB;
+    margin-left: 72px;
+    padding: 27px 30px 24px;
+}
+.pagination-page {
+    display: flex;
+    justify-content: space-between;
+    width: 145px;
+    margin: 0 209px 0 157px;
 }

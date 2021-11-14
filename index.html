@@ -49,7 +49,7 @@
             </header>
             <main class="main-container main-index">
                 <div class="page-container">
-                    <h1 class="visually-hidden">Магзин device</h1>
+                    <h1 class="visually-hidden">Магазин device</h1>
                     <section class="slider">
                         <h2 class="visually-hidden">особые предложения</h2>
                         <ul class="slider-list">
@@ -164,7 +164,7 @@
                             <h2 class="about-title">О нас</h2>
                                 <p class="about-text">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
                                 <p class="about-text">Мы можем доставить ваш товар в самые отдалённые уголки России транспортными компаниями:</p>
-                                    <ul>
+                                    <ul class="companies">
                                         <li class="companies-name">Меловые линии</li>
                                         <li class="companies-name">СДИК</li>
                                         <li class="companies-name">ТоксБерри</li>
@@ -187,28 +187,30 @@
                     </div>
                 </div>
                 <section class="newsletter">
-                    <div class="newsletter-container">
+                    <div class="page-container newsletter-container">
                         <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
-                            <p class="newsletter-email">Еженедельный дайджест с обзорами новинок,
+                            <p class="newsletter-text">Еженедельный дайджест с обзорами новинок,
                                 длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
-                            <form class="newsletter-form" action="#" method="POST">
-                                <label class="newsletter-email">
-                                    <span class="visually-hidden">Ваш e-mail</span>
-                                    <input class="field" placeholder="Ваш e-mail" type="mail" name="newsletter-email" id="newsletter-email" required>
-                                </label>
-                                <button class="button newsletter-button" type="submit">
-                                    Подписаться
-                                </button>
-                            </form>
-                            <p class="newsletter-email">Это бесплатно</p>
+                                <div class="newsletter-form-wrap">
+                                    <form class="newsletter-form" action="#" method="POST">
+                                        <label class="newsletter-email">
+                                            <span class="visually-hidden">Ваш e-mail</span>
+                                            <input class="field" placeholder="Ваш e-mail" type="mail" name="newsletter-email" id="newsletter-email" required>
+                                        </label>
+                                        <button class="button newsletter-button" type="submit">
+                                            Подписаться
+                                        </button>
+                                    </form>
+                                    <p class="newsletter-free">Это бесплатно</p>
+                                </div>
                     </div>
                 </section>
             </main>
             <footer class="page-footer">
-                <div class="page-footer-container">
+                <div class="page-container page-footer-container">
                     <a><img class="footer-contacts-logo" src="img/vector/logotip-2.svg" width="144,9" height="36" alt="Логотип магазина Девайс"></a>
                     <address class="footer-contacts-address">Санкт-Петербург, набережная реки Карповки, 5, литера П.</address>
-                    <div class="footer-navigation-list footer-social-list">
+                    
                         <ul class="footer-navigation-list">
                             <li class="footer-navigation-items">
                                 <a class="footer-navigation-link" href="#">Доставка</a>
@@ -237,7 +239,7 @@
                                 </a>
                             </li>
                         </ul>
-                    </div>
+                    
                         <p><a class="footer-contacts-phone" href="tel:78128121212">Тел.: +7(812)812-12-12</a></p>
                         <p><a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a></p>
                 </div>
