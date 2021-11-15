@@ -460,7 +460,7 @@ body {
     grid-template-columns: 250px 1fr 250px;
 }
 .footer-contacts-logo {
-    padding: 62px 0 35px;
+    margin: 62px 0 35px;
 }
 .footer-contacts-address {
     font-family: "rubik", sans-serif;
@@ -474,9 +474,10 @@ body {
 }
 .footer-navigation-list {
     display: flex;
-    justify-content: space-between;
     list-style-type: none;
     grid-row: 2/3; grid-column: 2/3;
+    margin: 0;
+    padding-left: 114px;
 }
 .footer-social-list {
     display: flex;
@@ -494,16 +495,18 @@ body {
     text-transform: uppercase;
     color: #ffffff;
     text-decoration: none;
+    padding: 0 7px 0;
 }
 .footer-contacts-phone {
     font-family: "rubik", sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 30px;
-    text-align: right;
+    text-align: left;
     color: #ffffff;
     text-decoration: none;
     grid-row: 2/3; grid-column: 3/4;
+    margin: 0;
 }
 .htmlacademy-link {
     grid-row: 3/4; grid-column: 3/4;
