@@ -413,8 +413,8 @@ body {
     font-weight: 800;
     font-size: 50px;
     line-height: 50px;
-    width: 560px;
     padding-top: 75px;
+    width: 560px;
     margin: 0;
 }
 .newsletter-text {
@@ -423,15 +423,15 @@ body {
     font-size: 18px;
     line-height: 30px;
     color: #444444;
-    width: 560px;
     margin-top: 86px;
+    width: 560px;
 }
 .newsletter-form {
     display: flex;
+    width: 860px;
 }
 .newsletter-form-wrap {
-    display: grid;
-    grid-column: 1/-1;
+    display: flex;
 }
 .field {
     font-family: "rubik", sans-serif;
@@ -451,6 +451,9 @@ body {
     letter-spacing: 0.2em;
     text-transform: uppercase;
     width: 260px;
+}
+.newsletter-free {
+    width: 150px;
 }
 .page-footer {
     background-color: #444444;
