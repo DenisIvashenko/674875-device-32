@@ -12,7 +12,7 @@
                 <div class="page-heder-top" >
                     <form class="search-form" method="POST" action="https://echo.htmlacademy.ru/">
                         <label class="search-label">
-                            <input type="text" name="search"  placeholder="Поиск по сайту">
+                            <input class="search" type="text" name="search"  placeholder="Поиск по сайту">
                             <span class="visually-hidden">Поиск по сайту</span>
                         </label>
                         <button class="search-button" type="submit" href="#">Найти</button>
@@ -42,7 +42,7 @@
                             <a class="navigation-link" href="#">Гарантия</a>
                         </li>
                         <li class="navigation-item">
-                            <a class="navigation-link" href="#">Контакты</a>
+                            <a class="navigation-link contacts-btn" href="#">Контакты</a>
                         </li>
                     </ul>
                 </nav>
@@ -156,7 +156,7 @@
                             </div>
                     </section>
                     <div class="thin">
-                        <p class="thin">Доставим редкий товар под заказ</p>
+                        <p class="thin-text">Доставим редкий товар под заказ</p>
                         <button class="thin-buttom">i</button>
                     </div>
                     <div class="info-block">
@@ -171,7 +171,7 @@
                                     </ul>
                                     <a class="about-more" href="#">Подробнее о нас</a>
                         </section>
-                        <section>
+                        <section class="contacts">
                             <h2 class="contacts-title">Контакты</h2>
                                 <p class="contacts-text">Вы можете забрать товар сами, заехав в наш офис. Заодно, сможете проверить работоспособность покупки.</p>
                             <h3 class="contacts-address-title">Интернет-магазин «Девайс»</h3>
@@ -195,7 +195,7 @@
                                     <form class="newsletter-form" action="#" method="POST">
                                         <label class="newsletter-email">
                                             <span class="visually-hidden">Ваш e-mail</span>
-                                            <input class="field" placeholder="Ваш e-mail" type="mail" name="newsletter-email" id="newsletter-email" required>
+                                            <input class="field-newsletter" placeholder="Ваш e-mail" type="mail" name="newsletter-email" id="newsletter-email" required>
                                         </label>
                                         <button class="button newsletter-button" type="submit">
                                             Подписаться
@@ -223,7 +223,9 @@
                     </ul>
                     <ul class="footer-social-list">
                         <li class="footer-social-item">
-                            <a class="button" href="https://www.facebook.com/htmlacademy">
+                            <a class="footer-social-link" href="https://www.facebook.com/htmlacademy"><svg class="" width="9" height="18" viewBox="0 0 9 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.5 3H9V0H5.6C2.8 0 2 1.7 2 4.2V6H0V9H2V18H5V9H8.3L8.9 6H5V4.5C5 3.7 5.3 3 6.5 3Z" fill="#444444"/>
+                                </svg>
                             <span class="visually-hidden">Фейсбук</span>
                             </a>
                         </li>
