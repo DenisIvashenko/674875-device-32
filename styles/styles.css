@@ -1960,6 +1960,17 @@ option {
   min-height: 60px;
   padding-left: 20px;
 }
+.user-message-input:focus {
+  outline: 5px solid #AF4FFF;
+}
+.user-message-input:active {
+  outline: 3px solid #000;
+  background-color: #ffffff;
+}
+.user-message-input:not(:placeholder-visible) {
+  outline: 3px solid #FF3D3D;
+  background-color: #ffffff;
+}
 .quantity-title {
   font-family: "rubik", sans-serif;
   font-style: normal;
@@ -1968,9 +1979,10 @@ option {
   line-height: 20px;
   margin: 0;
   min-height: 34px;
+  position: relative;
 }
-.quantity-title:hover.popover-info {
-
+.quantity-title:hover .popover-info {
+  display: block;
 }
 .quantity-title-btn {
   display: flex;
@@ -2092,7 +2104,7 @@ option {
 .button-send:hover {
   background-color: #FFC700;
 }
-.button-send:focus::before {
+.button-send:focus-visible::before {
   background-color: #AF4FFF;
 }
 .button-send:active {
@@ -2112,7 +2124,7 @@ option {
   box-shadow: 0 10px 0 rgba(0, 0, 0, 0.1);
   z-index: 1;
   padding: 19px 17px 0 19px;
-  display: ;
+  display: none;
  }
 .popover-info-btn {
   display: flex;
@@ -2120,6 +2132,9 @@ option {
 }
 .popover-info-btn::before {
   content: "";
+  position: absolute;
+  top: -27px;
+  right: 4px;
   width: 14px;
   height: 6px;
   background-image: url("data:image/svg+xml,%3Csvg width='14' height='6' viewBox='0 0 14 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M14 6H0L7 0L14 6Z' fill='black'/%3E%3C/svg%3E%0A");
