@@ -167,7 +167,7 @@ input:focus + .search-button {
   align-items: center;
 }
 
-.login-btn:before {
+.login-btn::before {
   content: "";
   width: 13px;
   height: 12px;
@@ -1782,6 +1782,7 @@ option {
   width: 100%;
   height: 100%;
   background: rgba(240, 240, 240, 0.8);
+  z-index: 5;
 }
 .modal {
   position: relative;
@@ -1823,8 +1824,7 @@ option {
   font-size: 50px;
   line-height: 50px;
   font-weight: 800;
-  color: #000;
-  text-transform: uppercase;  
+  color: #000;  
 }
 .form-container {
   display: flex;
@@ -1864,6 +1864,17 @@ option {
   padding-left: 20px;
   min-height: 60px;
 }
+.user-name-input:focus {
+  outline: 5px solid #AF4FFF;
+}
+.user-name-input:active {
+  outline: 3px solid #000;
+  background-color: #ffffff;
+}
+.user-name-input:not(:placeholder-visible) {
+  outline: 3px solid #FF3D3D;
+  background-color: #ffffff;
+}
 .user-name-explanation {
   font-family: "rubik", sans-serif;
   font-style: normal;
@@ -1902,7 +1913,7 @@ option {
   outline: 3px solid #000;
   background-color: #ffffff;
 }
-.user-email-input:invalid {
+.user-email-input:not(:placeholder-visible) {
   outline: 3px solid #FF3D3D;
   background-color: #ffffff;
 }
@@ -1938,7 +1949,7 @@ option {
   line-height: 20px;
   min-height: 34px;
 }
-.user-message-textarea {
+.user-message-input {
   font-family: "rubik", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -1957,6 +1968,9 @@ option {
   line-height: 20px;
   margin: 0;
   min-height: 34px;
+}
+.quantity-title:hover.popover-info {
+
 }
 .quantity-title-btn {
   display: flex;
@@ -1985,20 +1999,21 @@ option {
   background-color: #F0F0F0;
   position: relative;
 }
-.quantity-button-container:focus {
+.quantity-number:focus {
   outline: 5px solid #AF4FFF;
 }
-.quantity-button-container:active {
+.quantity-number:active {
   outline: 3px solid #000;
   background-color: #ffffff;
 }
-.quantity-button-container:invalid {
+.quantity-number:invalid {
   outline: 3px solid #FF3D3D;
   background-color: #ffffff;
 }
 .quantity-number {
-  
-  width: 60px;
+  background-color: #F0F0F0;
+  border: none;
+  width: 160px;
   height: 60px;
   margin: 0;
   padding: 0;
@@ -2006,11 +2021,11 @@ option {
 }
 .quantity-min {
   position: absolute;
-  top: 29px;
+  top: 22px;
   left: 19px;
   padding: 0;
   width: 16px;
-  height: 2px;
+  height: 16px;
   background-color: #F0F0F0;
   border: none;
   background-image: url("data:image/svg+xml,%3Csvg width='16' height='2' viewBox='0 0 16 2' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M16 0H0V2H16V0Z' fill='black'/%3E%3C/svg%3E ");
@@ -2056,27 +2071,37 @@ option {
   text-align: center;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  width: 200px;
-  height: 20px;
   position: relative;
   border: none;
   background-color: transparent;
   z-index: 1;
   cursor: pointer;
+  display: inline-flex;
+  padding: 14px 30px 16px;
 }
 .button-send::before {
   content: "";
-  width: 200px;
+  width: 100%;
   height: 8px;
   background-color: #FFC700;
   position: absolute;
   z-index: -1;
-  top: 8px;
+  top: 21px;
   left: 0;
+}
+.button-send:hover {
+  background-color: #FFC700;
+}
+.button-send:focus::before {
+  background-color: #AF4FFF;
+}
+.button-send:active {
+  background-color: #FFC700;
+  opacity: 70%;
 }
 .popover-info {
   position: absolute;
-  top: 300px;
+  top: 0;
   right: 0;
   box-sizing: border-box;
   width: 200px;
@@ -2086,5 +2111,20 @@ option {
   height: 160px;
   box-shadow: 0 10px 0 rgba(0, 0, 0, 0.1);
   z-index: 1;
-  display: none;
+  padding: 19px 17px 0 19px;
+  display: ;
  }
+.popover-info-btn {
+  display: flex;
+  align-items: flex-start;
+}
+.popover-info-btn::before {
+  content: "";
+  width: 14px;
+  height: 6px;
+  background-image: url("data:image/svg+xml,%3Csvg width='14' height='6' viewBox='0 0 14 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M14 6H0L7 0L14 6Z' fill='black'/%3E%3C/svg%3E%0A");
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: 12px;
+  display: block;
+}

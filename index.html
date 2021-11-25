@@ -305,22 +305,22 @@
               <div class="message-quantity-container">
                 <div class="auth-message">
                   <label class="user-message-label" for="user-message">Что нужно привезти:</label>
-                  <textarea class="user-message-textarea" id="user-message" name="user-message" placeholder="В свободной форме"></textarea>
+                  <input class="user-message-input" id="user-message" name="user-message" placeholder="В свободной форме"></input>
                 </div>
                 <div class="quantity">
-                  <h2 class="quantity-title quantity-title-btn">Количество:</h2>
-                  <div class="popover-info">
-                    <p class="popover-info">Постараемся найти, сколько нужно. Привезём сколько получится по требованиям 
-                      к провозу багажа.</p>
-                  </div>
+                  <label class="quantity-title quantity-title-btn" for="quantity">Количество:</label>
                   <div class="quantity-button-container">
                     <button class="quantity-button quantity-min" type="button">
                         <span class="visually-hidden">Уменьшить количество</span>
                     </button>
-                    <p class="quantity-number">1</p>
+                    <input class="quantity-number" id="quantity-number" name="quantity-number" placeholder="1"></input>
                     <button class="quantity-button quantity-max" type="button">
                         <span class="visually-hidden">Увеличить количество</span>
                     </button>
+                    <div class="popover-info">
+                      <p class="popover-info popover-info-btn">Постараемся найти, сколько нужно. Привезём сколько получится по требованиям 
+                        к провозу багажа.</p>
+                    </div>
                   </div>
                 </div>
               </div>
